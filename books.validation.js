@@ -9,15 +9,15 @@ const create = Joi.object({
 });
 
 const getbookById = Joi.object({
-  id: Joi.string().alphanum().length(24).required(), // Example: MongoDB ObjectId
+  id: Joi.string().alphanum().length(24).required(),
 });
 
 const updateBooks = Joi.object({
-  id: Joi.string().alphanum().length(24).required(), // Example: MongoDB ObjectId
+  id: Joi.string().alphanum().length(24).required(),
 });
 
 const deleteBook = Joi.object({
-  id: Joi.string().alphanum().length(24).required(), // Example: MongoDB ObjectId
+  id: Joi.string().alphanum().length(24).required(),
 });
 
 module.exports = {
