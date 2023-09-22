@@ -20,21 +20,18 @@ router.get("/", booksService.getBooks);
 // Get By ID
 router.get(
   "/:id",
-  validateSchema(booksValidation.getbookById),
   booksService.getBookById
 );
 
 // Update
 router.put(
   "/:id",
-  validateSchema(booksValidation.updateBooks),
   booksService.updateBooks
 );
 
 // Delete
 router.delete(
   "/:id",
-  validateSchema(booksValidation.deleteBook),
   booksService.deleteBook
 );
 
